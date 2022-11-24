@@ -6,6 +6,9 @@ public class TaskManager {
     static final String[] OPTIONS = {"add", "remove", "list", "exit"};
 
     public static void main(String[] args) {
+        String[][] tasks;
+        tasks = getTaskList();
+
         printOption(OPTIONS);
     }
 
@@ -15,5 +18,10 @@ public class TaskManager {
         for (String option: options){
             System.out.println(option);
         }
+    }
+
+    public static String[][] getTaskList(){
+        String[][] tasks;
+        return tasks;
     }
 }
